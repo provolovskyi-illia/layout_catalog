@@ -51,6 +51,7 @@
   @extend %position-center-ver-and-hor;
   @extend %text-link;
   color: #000;
+  transition: $time-transition;
 }
 
 .nav__link:hover,
