@@ -1,7 +1,12 @@
 /* #region block-card-product */
+.main__container-with-card {
+  margin: 50px 0 78px;
+}
 
-.content-home-page__card {
-  margin: 0 24px 50px;
+.content-home-page {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 50px 48px;
 }
 
 .card {
@@ -18,9 +23,18 @@
   border-radius: 5px;
 
   &__image-imac {
-    margin: 15px 5px 45px;
+    margin: 1px 2px 31px;
+    padding: 11px 0;
     width: 160px;
     height: 134px;
+    transition: transform 400ms;
+    box-sizing: initial;
+    border: 3px solid #fff;
+  }
+
+  &__image-imac:hover {
+    transform: scale(1.2);
+    border: 3px solid #f3f3f3;
   }
 
   &__description {
@@ -56,6 +70,7 @@
     background-color: $color-product-blue;
     border: 1px solid $color-product-blue;
     border-radius: 5px;
+    transition: 400ms;
   }
 
   &__link-buttom:hover {
